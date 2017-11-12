@@ -28,7 +28,7 @@ public class App_Search {
 
 		Map<String, String> options = new HashMap<String, String>(); //Cria um hashmap para as query's
 		options.put("method", "track.search"); //Método da api, tipo, só para buscas de tracks
-		options.put("track", "Rap Lord"); //Nem precisa dizer
+		options.put("track", "The A Team"); //Nem precisa dizer
 		options.put("api_key", "68bcc9cffa6a90e346de31b396b1a163"); //Minha key né
 		options.put("limit", "1"); //Limite por pag
 		options.put("format", "json"); //O formato padrao

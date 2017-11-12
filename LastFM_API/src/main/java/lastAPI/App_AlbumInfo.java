@@ -23,8 +23,8 @@ public class App_AlbumInfo {
 				
 				Map<String, String> options = new HashMap<String, String>(); //Cria um hashmap para as query's
 				options.put("method","album.getInfo");
-				options.put("artist", "Bonde da Stronda");
-				options.put("album", "O Lado Certo da Vida Certa");
+				options.put("artist", "Sam Smith");
+				options.put("album", "Stay with Me");
 				options.put("api_key", "68bcc9cffa6a90e346de31b396b1a163");
 				options.put("format", "json");
 				options.put("limit", "4");

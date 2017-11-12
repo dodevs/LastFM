@@ -3,12 +3,9 @@ package lastAPI;
 import java.util.HashMap;
 import java.util.Map;
 
-import lastAPI.calls.Track_Search;
 import lastAPI.calls.Track_Similar;
-import models.track.similar.SimilarTracks;
 import models.track.similar.Track;
 import models.track.similar.TrackGetSimilar;
-import okio.Options;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -24,8 +21,8 @@ public class App_Similar {
 		
 		Map<String, String> options = new HashMap<String, String>(); //Cria um hashmap para as query's
 		options.put("method","track.getSimilar");
-		options.put("artist", "Projota");
-		options.put("track", "Mulher");
+		options.put("artist", "Ed Sheeran");
+		options.put("track", "The A Team");
 		options.put("api_key", "68bcc9cffa6a90e346de31b396b1a163");
 		options.put("format", "json");
 		options.put("limit", "4");
@@ -48,7 +45,9 @@ public class App_Similar {
 					
 					for(Track track : similar.similartracks.track) {
 						System.out.println(track.name);
-						System.out.println(track.artist);
+						System.out.println(track.artist.name);
+						System.out.println(track.artist.mbid);
+						System.out.println(track.image.get(3).text);
 						System.out.println("");
 					}
 					

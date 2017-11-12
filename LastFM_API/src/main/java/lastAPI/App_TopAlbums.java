@@ -21,7 +21,7 @@ public class App_TopAlbums {
 				
 				Map<String, String> options = new HashMap<String, String>(); //Cria um hashmap para as query's
 				options.put("method","artist.gettopalbums");
-				options.put("artist", "Projota");
+				options.put("artist", "Sam Smith");
 				options.put("api_key", "68bcc9cffa6a90e346de31b396b1a163");
 				options.put("format", "json");
 				options.put("limit", "4");
@@ -45,6 +45,7 @@ public class App_TopAlbums {
 							for(Album album : albums.topalbums.album) {
 								System.out.println(album.name);
 								System.out.println(album.artist.name);
+								System.out.println(album.artist.mbid);
 								System.out.println("\n");
 							}
 							
