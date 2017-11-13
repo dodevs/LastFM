@@ -2,7 +2,6 @@ package lastAPI.calls;
 
 import java.util.Map;
 
-import models.artist.albums.Album;
 import models.artist.albums.ArtistGetTopAlbums;
 import retrofit2.Call;
 import retrofit2.http.GET;
